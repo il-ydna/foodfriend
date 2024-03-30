@@ -76,7 +76,7 @@ def parse_text(readings):
         else:
             best_match = max(macro_categories, key=lambda word: fuzz.ratio(word, user_in))
             similarity_ratio = fuzz.ratio(best_match, user_in)
-            if(similarity_ratio >= 70):
+            if(similarity_ratio >= 50):
                 if input(f"Did you mean {best_match}? (y/n)").lower() == 'y':
                     fix_value(best_match.lower(), macros)
             else:

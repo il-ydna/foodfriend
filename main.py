@@ -7,7 +7,7 @@ import read_label
 
 
 if __name__ == '__main__':
-    img = cv2.imread(os.path.join("test", "test.png"))
+    img = cv2.imread(os.path.join("test", "test1.png"))
     if img is None:
         print('Error opening image!')
 

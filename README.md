@@ -1,1 +1,3 @@
 # foodfriend
+
+dependencies: 
